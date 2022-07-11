@@ -1,7 +1,7 @@
 using UnityEditor;
 using UnityEngine.UIElements;
 
-namespace Unity.Notifications
+namespace InternetComputer
 {
     internal class ICSettingsProvider : SettingsProvider
     {
@@ -12,7 +12,7 @@ namespace Unity.Notifications
         }
 
         [SettingsProvider]
-        static SettingsProvider CreateMobileNotificationsSettingsProvider()
+        static SettingsProvider CreateICSettingsProvider()
         {
             return new ICSettingsProvider("Project/Internet Computer Settings", SettingsScope.Project);
         }
